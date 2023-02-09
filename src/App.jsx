@@ -1,12 +1,9 @@
-
 import "./App.css";
 
 import UserForm from "./pages/UserForm/UserForm";
 
 function App() {
-  return (
-    <UserForm />
-  );
+  return <UserForm />;
 }
 
 export default App;

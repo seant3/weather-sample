@@ -44,18 +44,16 @@ export default function UserForm() {
   }
 
   async function handleSubmit(e) {
-    
     e.preventDefault();
-    
   }
 
   async function handleAddToDb(weatherInfo) {
-    console.log(weatherInfo, ' this is post in handleAddToDb');
+    console.log(weatherInfo, " this is post in handleAddToDb");
     try {
-        const response = await weatherUtil.create(weatherInfo);
-        setWeather([response.weatherInfo, ...weather])
+      const response = await weatherUtil.create(weatherInfo);
+      setWeather([response.weatherInfo, ...weather]);
     } catch (err) {
-        console.log(err.message)
+      console.log(err.message);
     }
   }
 

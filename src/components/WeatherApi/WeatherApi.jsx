@@ -18,8 +18,9 @@ export default function WeatherApi({ latitude, longitude, handleAddToDb }) {
     setWeather({
       temp: data.main.temp,
       conditions: data.weather[0].description,
-    });    
-    
+    });
+
+    handleAddToDb(weather);
   }
 
   useEffect(() => {

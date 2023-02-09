@@ -1,7 +1,7 @@
-import express from 'express';
+import express from "express";
 const router = express.Router();
-import weathersCtrl from '../controllers/weathers.js'
+import weathersCtrl from "../controllers/weathers.js";
 
-router.post('/weather', weathersCtrl.create);
+router.post("/weather", weathersCtrl.create);
 
 export default router;

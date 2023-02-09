@@ -5,7 +5,7 @@ export default {
 };
 
 async function create(req, res) {
-    console.log('create controller firing')
+  console.log("create controller firing");
   const weather = new Weather(req.body);
   try {
     await weather.save();
